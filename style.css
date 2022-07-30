@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'BArlow Condensed', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("../Images/banner.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: top;
+}
+
+nav img{
+    width: 180px;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 13px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+/* I am yet to understand this pseudo-element. All I know is that it enabled
+   a underline with the specified color. 
+   But with practice I will get to understand it
+ */
+.nav-links ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #f44336;
+     /*Brought about the display of the line provided the width is 100%*/
+    display: block;
+    transition: 0.5s ease-in-out;
+
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 3.8rem;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+}
