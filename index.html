@@ -12,10 +12,12 @@
     <section class="header">
         <nav>
             <a href="index.html">
-                <img src="/Images/logo.png" alt="Eduford Logo">
+                <img src="/Images/logo.png" alt="Eduford Logo" class="logo">
             </a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="nav-Links">
+                <img src="/Images/close-icon.png" alt="" class="icon close" onclick="hideMenu()">                    
+                                
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -25,10 +27,12 @@
 
                 </ul>
             </div>
+            <img src="/Images/bar-icon.png" alt="" class="icon bar" onclick="showMenu()">
         </nav>
 
         <div class="text-box">
-            <h1>World's Biggest University
+            <h1>
+                World's Biggest University
             </h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis 
@@ -36,11 +40,24 @@
                 riores eos praesentium cupiditate quam!
             </p>
 
-            <a href="http://">Visit Us To Know More</a>
+            <a href="http://" class="hero-btn">Visit Us To Know More</a>
         </div>
        
 
     </section>
     
+    <!-- JS Code for the Toggle Menu -->
+    <!-- I learnt this today -->
+    <script>
+        var navLinks = document.getElementById("nav-Links");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
