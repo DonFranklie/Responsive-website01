@@ -14,6 +14,6 @@ Desktop view:
 
 Mobile view:
 
-![](Images/Mobile-view-1.png)          
+![](Images/Mobile-view-1.png)
 ![](Images/Mobile-view-2.png)
 
